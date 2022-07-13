@@ -61,14 +61,16 @@ a:any;
   }
 
 sat=["sat","pur","sdfg","saty"]
-text:any=[];
+text:any=[]
 s:any
 Funeach(){
-    this.sat.forEach(myFunction)
-   function myFunction(s:any) {
+
+   const myFunction = (s:any) => {
+    this.text.push(s)
    console.log(s)
         }
       
-
+         this.sat.forEach(myFunction)
+        console.log(this.text)
   }
   }
